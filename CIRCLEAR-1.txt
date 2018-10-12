@@ -1,0 +1,42 @@
+#include<iostream.h>
+class Circle
+{
+private:
+float radius;
+public:
+Circle(): radius(4){}
+void getRadius()
+{
+cout<<"enter the radius value:";
+cin>>radius;
+}
+void showRadius()
+{
+cout<<"radius is :"<<radius<<endl;
+}
+float Area()
+{
+return 3.14*radius*radius;
+}
+};
+int main()
+{
+Circle r1;
+r1.showRadius();
+r1.getRadius();
+r1.showRadius();
+cout<<r1.Area();
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
